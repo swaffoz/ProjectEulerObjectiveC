@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2F1561571B9CBE6D00562FB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1561561B9CBE6D00562FB4 /* main.m */; };
+		2F1561661B9CBED800562FB4 /* Problem1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1561651B9CBED800562FB4 /* Problem1Tests.m */; };
+		2F1561731B9CC65700562FB4 /* Problem1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1561721B9CC65700562FB4 /* Problem1.m */; };
+		2F1561741B9CC66600562FB4 /* Problem1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1561721B9CC65700562FB4 /* Problem1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,24 @@
 /* Begin PBXFileReference section */
 		2F1561531B9CBE6D00562FB4 /* Project Euler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Project Euler"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F1561561B9CBE6D00562FB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F1561611B9CBED800562FB4 /* ProjectEulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectEulerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1561641B9CBED800562FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F1561651B9CBED800562FB4 /* Problem1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Problem1Tests.m; sourceTree = "<group>"; };
+		2F1561701B9CC3FC00562FB4 /* Solvable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Solvable.h; sourceTree = "<group>"; };
+		2F1561711B9CC65700562FB4 /* Problem1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Problem1.h; sourceTree = "<group>"; };
+		2F1561721B9CC65700562FB4 /* Problem1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem1.m; sourceTree = "<group>"; };
+		2F1561751B9CC7B500562FB4 /* Problems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Problems.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2F1561501B9CBE6D00562FB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F15615E1B9CBED800562FB4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				2F1561551B9CBE6D00562FB4 /* Project Euler */,
+				2F1561621B9CBED800562FB4 /* ProjectEulerTests */,
 				2F1561541B9CBE6D00562FB4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				2F1561531B9CBE6D00562FB4 /* Project Euler */,
+				2F1561611B9CBED800562FB4 /* ProjectEulerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +77,37 @@
 			isa = PBXGroup;
 			children = (
 				2F1561561B9CBE6D00562FB4 /* main.m */,
+				2F1561701B9CC3FC00562FB4 /* Solvable.h */,
+				2F15617A1B9CC88200562FB4 /* Problems */,
 			);
 			path = "Project Euler";
+			sourceTree = "<group>";
+		};
+		2F1561621B9CBED800562FB4 /* ProjectEulerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F1561651B9CBED800562FB4 /* Problem1Tests.m */,
+				2F1561631B9CBED800562FB4 /* Supporting Files */,
+			);
+			path = ProjectEulerTests;
+			sourceTree = "<group>";
+		};
+		2F1561631B9CBED800562FB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F1561641B9CBED800562FB4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F15617A1B9CC88200562FB4 /* Problems */ = {
+			isa = PBXGroup;
+			children = (
+				2F1561751B9CC7B500562FB4 /* Problems.h */,
+				2F1561711B9CC65700562FB4 /* Problem1.h */,
+				2F1561721B9CC65700562FB4 /* Problem1.m */,
+			);
+			name = Problems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +130,23 @@
 			productReference = 2F1561531B9CBE6D00562FB4 /* Project Euler */;
 			productType = "com.apple.product-type.tool";
 		};
+		2F1561601B9CBED800562FB4 /* ProjectEulerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F1561691B9CBED800562FB4 /* Build configuration list for PBXNativeTarget "ProjectEulerTests" */;
+			buildPhases = (
+				2F15615D1B9CBED800562FB4 /* Sources */,
+				2F15615E1B9CBED800562FB4 /* Frameworks */,
+				2F15615F1B9CBED800562FB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProjectEulerTests;
+			productName = ProjectEulerTests;
+			productReference = 2F1561611B9CBED800562FB4 /* ProjectEulerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +157,9 @@
 				ORGANIZATIONNAME = "Zane Swafford";
 				TargetAttributes = {
 					2F1561521B9CBE6D00562FB4 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2F1561601B9CBED800562FB4 = {
 						CreatedOnToolsVersion = 6.4;
 					};
 				};
@@ -109,9 +177,20 @@
 			projectRoot = "";
 			targets = (
 				2F1561521B9CBE6D00562FB4 /* Project Euler */,
+				2F1561601B9CBED800562FB4 /* ProjectEulerTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F15615F1B9CBED800562FB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F15614F1B9CBE6D00562FB4 /* Sources */ = {
@@ -119,6 +198,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F1561571B9CBE6D00562FB4 /* main.m in Sources */,
+				2F1561731B9CC65700562FB4 /* Problem1.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F15615D1B9CBED800562FB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1561661B9CBED800562FB4 /* Problem1Tests.m in Sources */,
+				2F1561741B9CC66600562FB4 /* Problem1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +305,38 @@
 			};
 			name = Release;
 		};
+		2F1561671B9CBED800562FB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ProjectEulerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2F1561681B9CBED800562FB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ProjectEulerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -233,6 +354,15 @@
 			buildConfigurations = (
 				2F15615B1B9CBE6D00562FB4 /* Debug */,
 				2F15615C1B9CBE6D00562FB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F1561691B9CBED800562FB4 /* Build configuration list for PBXNativeTarget "ProjectEulerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F1561671B9CBED800562FB4 /* Debug */,
+				2F1561681B9CBED800562FB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
